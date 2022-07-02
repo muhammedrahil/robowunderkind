@@ -467,7 +467,8 @@
                         <div class="card ms-3 border-0 col-6 col-md-6 col-sm-6" style="width: 18rem;height: 170px;">
                             <div class="card-body card-image">
                                 <div class="row ">
-                                    <div class="col-md-2 col-2 col-sm-2"><img src="./static/img/logo/card-icon.svg" alt="" srcset="">
+                                    <div class="col-md-2 col-2 col-sm-2"><img src="./static/img/logo/card-icon.svg"
+                                            alt="" srcset="">
                                     </div>
                                     <div class=" col-md-12 col-lg-12 col-sm-10 col-10">
                                         <p class="card-text text-muted fs-5 fw-bold">Developed in collaboration with
@@ -482,7 +483,8 @@
                         <div class="card ms-3  border-0 col-6 col-md-6 col-sm-6" style="width: 18rem; height: 170px;">
                             <div class="card-body card-image">
                                 <div class="row">
-                                    <div class="col-md-2 col-2 col-sm-2 "><img src="./static/img/logo/card-icon.svg" alt="" srcset="">
+                                    <div class="col-md-2 col-2 col-sm-2 "><img src="./static/img/logo/card-icon.svg"
+                                            alt="" srcset="">
                                     </div>
                                     <div class="col-md-12 col-lg-12 col-sm-10 col-10">
                                         <p class="card-text text-muted fs-5 fw-bold">Promotes child-centered learning
@@ -498,7 +500,8 @@
                         <div class="card ms-3 border-0 col-12 col-md-12 col-sm-12" style="width: 18rem;height: 170px;">
                             <div class="card-body card-image">
                                 <div class="row">
-                                    <div class="col-md-2 col-2 col-sm-2"><img src="./static/img/logo/card-icon.svg" alt="" srcset="">
+                                    <div class="col-md-2 col-2 col-sm-2"><img src="./static/img/logo/card-icon.svg"
+                                            alt="" srcset="">
                                     </div>
                                     <div class="col-md-12 col-lg-12 col-sm-10 col-10">
                                         <p class="card-text text-muted fs-5 fw-bold">Considers the stages of children’s
@@ -512,7 +515,8 @@
                         <div class="card ms-3 border-0 col-12 col-md-12 col-sm-12" style="width: 18rem; height: 170px;">
                             <div class="card-body card-image">
                                 <div class="row">
-                                    <div class="col-md-2 col-2 col-sm-2"><img src="./static/img/logo/card-icon.svg" alt="" srcset="">
+                                    <div class="col-md-2 col-2 col-sm-2"><img src="./static/img/logo/card-icon.svg"
+                                            alt="" srcset="">
                                     </div>
                                     <div class="col-md-12 col-lg-12 col-sm-10 col-10">
                                         <p class="card-text text-muted fs-5 fw-bold">Encourages learning through
@@ -603,24 +607,27 @@
                 <div class="row ">
                     <div class="col-md-0 col-lg-2 col-sm-0 col-0 "></div>
                     <div class="col-md-12 col-lg-10 col-sm-12  col-12 ">
-                        <div class="col-md-0 col-lg-7 col-sm-0  col-12 input rounded-3 mt-0"><input type="text"
-                                class="input-box text-muted " placeholder="First name*"></div>
-                        <div class="col-md-0 col-lg-7 col-sm-0  col-12 input rounded-3 mt-2"><input type="text"
-                                class="input-box text-muted " placeholder="Last name*"></div>
-                        <div class="col-md-0 col-lg-7 col-sm-0  col-12 input rounded-3 mt-2"><input type="text"
-                                class="input-box text-muted " placeholder="Email Address*"></div>
-                        <div class="col-md-0 col-lg-7 col-sm-0  col-12 input rounded-3 mt-2"><select name="" id=""
-                                class="input-box-select text-muted">
-                                <option value="">&nbsp;&nbsp; English*</option>
-                                <option value=""> &nbsp;&nbsp;German*</option>
-                            </select></div>
-                        <div class="col-md-0 col-lg-7 col-sm-0  col-12 input rounded-3 mt-2">
-                            <select name="" id="" class="input-box-select text-muted">
-                                <option value="">&nbsp;&nbsp; parent*</option>
-                                <option value=""> &nbsp;&nbsp;educator*</option>
-                            </select>
-                        </div>
-                        <button class="btn fw-bold  p-2 mt-5 " id="shop-now-6" type="submit">sign up</button>
+                        <form action="#"  name="form" onsubmit="return validate()">
+                            <div class="col-md-0 col-lg-7 col-sm-0  col-12 input rounded-3 mt-0"><input type="text"
+                                    class="input-box text-muted " name="fname" placeholder="First name*" ></div>
+                            <div class="col-md-0 col-lg-7 col-sm-0  col-12 input rounded-3 mt-2"><input type="text"
+                                    class="input-box text-muted " name="lname" placeholder="Last name*" ></div>
+                            <div class="col-md-0 col-lg-7 col-sm-0  col-12 input rounded-3 mt-2"><input type="text"
+                                    class="input-box text-muted " name="email" placeholder="Email Address*" >
+                            </div>
+                            <div class="col-md-0 col-lg-7 col-sm-0  col-12 input rounded-3 mt-2"><select name="lang"
+                                    id="" class="input-box-select text-muted" >
+                                    <option value="English">&nbsp;&nbsp; English*</option>
+                                    <option value="German"> &nbsp;&nbsp;German*</option>
+                                </select></div>
+                            <div class="col-md-0 col-lg-7 col-sm-0  col-12 input rounded-3 mt-2">
+                                <select name="temp" id="" class="input-box-select text-muted" >
+                                    <option value="parent">&nbsp;&nbsp; parent*</option>
+                                    <option value="educator"> &nbsp;&nbsp;educator*</option>
+                                </select>
+                            </div>
+                            <button class="btn fw-bold  p-2 mt-5 " id="shop-now-6"   type="submit">sign up</button>
+                        </form>
                     </div>
                 </div>
             </div>
